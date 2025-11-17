@@ -54,18 +54,62 @@ nav ul li a:hover {
 }
 
 /* FOOTER */
-footer {
+footer{
+    background-color: lightslategray;
+    padding: 20px 16px;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-items {
+    margin-top: 20px;
+}
+.footer-items a {
+    transition: color blue;
+}
+
+ul li{
+    margin-bottom: 8px;
+}
+
+.social-media {
+    display: flex;
+    gap: 8px;
+}
+
+.copyright-section {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+/* footer {
     background: #1E4D8B;
     color: white;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
     font-size: 14px;
-}
+} */
 
 /* HALAMAN CONTAINER */
 .main-container {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .upper-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature-container {
+        display: flex;
+    }
+
 }
