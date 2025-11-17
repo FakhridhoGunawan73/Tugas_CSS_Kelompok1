@@ -1,0 +1,171 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #3A7CCB;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+header h3 {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* FORM */
+form {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* FIELDSET BOX */
+/* Styling box seperti sebelumnya */
+.box {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: white;
+}
+
+.box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 200;
+}
+
+/* Checkbox simpel: letakkan label & checkbox dalam satu baris */
+.checkbox-right {
+  display: flex;
+  align-items: center;      /* sejajarkan label & checkbox */
+  gap: 10px;                /* jarak kecil antara label dan checkbox */
+  margin-top: 10px;
+}
+
+
+/* HOMETOWN (CITY + PROVINCE) */
+.hometown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hometown > div {
+  width: 100%;
+}
+
+/* SCORE INPUT */
+.score-input {
+  max-width: 250px;
+}
+
+.scale-note,
+.jhs-certificate-tag,
+.NISN-card-tag,
+.photo-tag {
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+/* BUTTONS */
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#reset {
+  margin-left: 10px;
+  background: #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #3A7CCB;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* ============================
+   📱 RESPONSIVE
+   ============================ */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .hometown {
+    flex-direction: row;
+  }
+
+  .hometown > div {
+    width: 50%;
+  }
+
+  header h1 { font-size: 32px; }
+  header h3 { font-size: 18px; }
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+
+  form {
+    padding: 20px 50px;
+  }
+
+  .score-input {
+    max-width: 350px;
+  }
+
+  header h1 { font-size: 36px; }
+  header h3 { font-size: 20px; }
+}
+
+/* FOOTER */
+.main-footer {
+  background-color: #1e1e1e;    
+  color: white;                  
+  text-align: center;           
+  padding: 20px 0;              
+  font-size: 16px;              
+  margin-top: 50px;              
+  border-top: 2px solid #444;   
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .main-footer {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+}

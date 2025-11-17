@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Form</title>
+
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+
+<body>
+
+<header>
+        <div class="container">
+            <div class="logo">SMKN Budi Pelita Bangsa</div>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/register.html">Registrasi</a></li>
+                    <li><a href="../pages/kurikulum.html">Kurikulum</a></li>
+                    <li><a href="../pages/documentation.html">Dokumentasi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form action="#" method="GET">
+
+        <!-- PERSONAL INFO -->
+        <fieldset class="box">
+            <legend><strong>Personal Details</strong></legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+
+            <div class="hometown">
+
+                <div>
+                    <label for="city">City/Regency</label>
+                    <input type="text" id="city" name="city" required placeholder="Enter your city">
+                </div>
+
+                <div>
+                    <label for="province">Province</label>
+                    <input type="text" id="province" name="province" required placeholder="Enter your province">
+                </div>
+
+            </div>
+
+            <label for="date-birth">Date of Birth</label>
+            <input type="date" id="date-birth" name="date-birth" required>
+
+            <label for="religion">Religion</label>
+            <select id="religion" name="religion" required>
+                <option value="">-- Choose One --</option>
+                <option value="islam">Islam</option>
+                <option value="katolik">Katholik</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="lain">Lainnya</option>
+            </select>
+        </fieldset>
+
+        <!-- EDUCATIONAL BACKGROUND -->
+        <fieldset class="box">
+            <legend><strong>Educational Background</strong></legend>
+
+            <label for="JHS">Junior High School</label>
+            <input type="text" id="JHS" name="JHS" required placeholder="Write your Junior High School">
+
+            <label for="adress">Your JHS Address</label>
+            <textarea id="adress" name="adress" rows="4" required placeholder="Write your JHS address"></textarea>
+
+            <label for="finalScore">Final Score</label>
+            <input type="number" id="finalScore" name="finalScore" min="1" max="100" required placeholder="Final score">
+            <p class="scale-note">Scale: 1 - 100</p>
+
+            <label for="JHS-Cert">Upload Certificate of Graduation</label>
+            <input type="file" id="JHS-Cert" name="JHS-Certificate">
+            <p class="jhs-certificate-tag">PDF max 20MB</p>
+
+            <label for="NISN">Upload your NISN</label>
+            <input type="file" id="NISN" name="NISN">
+            <p class="NISN-card-tag">PDF max 20MB</p>
+        </fieldset>
+
+        <!-- MAJOR -->
+        <fieldset class="box">
+  <legend><strong>Major Option</strong></legend>
+
+  <label>Pilih satu jurusan yang kamu inginkan :</label><br><br>
+
+        <div class="checkbox-right">
+            <label for="tata-boga">Tata Boga</label>
+            <input type="checkbox" id="tata-boga" name="mode" value="tata-boga">
+        </div>
+
+        <div class="checkbox-right">
+            <label for="teknik-informatika">Teknik Informatika</label>
+            <input type="checkbox" id="teknik-informatika" name="mode" value="teknik-informatika">
+        </div>
+
+        <div class="checkbox-right">
+            <label for="desain-grafis">Desain Grafis</label>
+            <input type="checkbox" id="desain-grafis" name="mode" value="desain-grafis">
+        </div>
+
+        <div class="checkbox-right">
+            <label for="seni-musik">Seni Musik</label>
+            <input type="checkbox" id="seni-musik" name="mode" value="seni-musik">
+        </div>
+
+        <label for="photo">Upload your photo</label><br><br>
+            <input type="file" id="photo" name="photo">
+            <p class="photo-tag">JPG max 20MB</p>
+        </fieldset>
+
+    </form>
+
+<footer>
+        <div class="upper-footer">
+            <section class="footer-items">
+                <h2 class="header-footer">SMK Pelita Bangsa</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </section>
+    
+            <section class="footer-items">
+                <h3 class="header-footer">Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/register.html">Registrasi</a></li>
+                    <li><a href="../pages/kurikulum.html">Kurikulum</a></li>
+                    <li><a href="../pages/documentation.html">Dokumentasi</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-items">
+                <h3 class="header-footer">Follow Us</h3>
+                <ul class="social-media">
+                    <li><i class="lni lni-facebook"></i></li>
+                    <li><i class="lni lni-instagram"></i></li>
+                    <li><i class="lni lni-x"></i></li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="copyright-section">
+            <p>&copy; 2025 SMK Pelita Bangsa. All rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>
+
