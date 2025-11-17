@@ -1,0 +1,91 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #f0f2f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 8px;
+}
+
+/* main/about */
+
+.hero-section {
+    display: flex;
+}
+
+.post-card {
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px;
+    margin: 30px;
+    transition: all 0.3 ease-in-out;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+}
+
+.post-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.post-card h3 {
+    padding: 8px;
+}
+
+.post-card p{
+    padding: 8px;
+    text-align: justify;
+}
+
+.read-more-link {
+    display: grid;
+}
+
+/* kurikulum/pendaftaran/dokumentasi */
+.feature-container {
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+}
+
+.feature-card {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    transition: all 0.3 ease-in-out;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card h3{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.feature-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
